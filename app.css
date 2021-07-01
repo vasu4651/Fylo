@@ -452,6 +452,10 @@ footer > img{
         padding-bottom: 22px;
     }
 
+    .sign-up a{
+        display: inline-block;
+    }
+
 }
 
 
@@ -476,6 +480,9 @@ footer > img{
         padding-left: 0px;
     }
 
+    .sign-up{
+        top: 2810px;
+    }
 
 }
 
@@ -484,16 +491,39 @@ footer > img{
 
 @media (max-width: 840px){
 
-.hero{
-    padding: 50px 0px;
+    .hero{
+        height: 1050px;
+        padding: 50px 0px;
+    }
+
+    .hero h2{
+        padding: 27px 0px;
+    }
+
+    .hero p{
+        padding: 13px 100px;
+    }
+
+    .reviews{
+        height: 300px;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .rev{
+        padding: 10px 5px 0px;
+        height: 210px;
+    }
+
+    .sign-up{
+        top: 2550px;
+    }
+
 }
 
-.hero h2{
-    padding: 27px 0px;
-}
 
-.hero p{
-    padding: 13px 100px;
-}
-
+@media (max-width: 400px){
+    .sec2 .icon-item{
+        flex-basis: 100%;
+    }
 }
