@@ -293,12 +293,12 @@ h2{
 }
 
 .sign-up input{
-    padding: 10px 120px;
+    padding: 10px 110px;
     border-radius: 30px;
 }
 
 .sign-up a{
-    padding: 12px 20px;
+    padding: 12px 10px;
     text-decoration: none;
     background-color: hsl(198, 60%, 50%);
     color: white;
