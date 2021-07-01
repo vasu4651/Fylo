@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: "Open Sans" , sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: hsl(218, 28%, 13%);
+    color: white;
+}
+
+main{
+    position: relative;        /* for moving the card at the very last by making it's position absolute */
+}
+
+h2{
+    font-size: 40px;
+}
+
+.shadow{
+    box-shadow: 8px 8px 5px hsl(217, 51%, 9%);
+}
+
+
+
+
+
+
+/* NAV  */
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    background: hsl(217, 28%, 15%);
+    /* background: hsl(216, 27%, 18%); */
+}
+
+.nav-items{             /*  ul  */
+    display: flex;
+    align-items: center;
+}
+
+.nav-items :not(:last-child){      /* all li's except last one */
+    padding-right: 40px;
+}
+
+.nav-link{                        /*  li's inside ul  */
+    list-style: none;
+}
+
+.nav-link a{                      /* anchor tag inside li */
+    text-decoration: none;
+    color: rgb(201, 192, 192);
+}
+
+.nav-link a:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+/* FIRST SECTION */
+.hero{
+    /* border: 1px solid white; */
+    text-align: center;
+    width: 100;
+    height: 1327px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    padding-left: 250px;
+    padding-right: 250px;
+    background: url(img/bg-curvy-desktop.svg) no-repeat bottom;
+    background-size: cover;
+    background-size: 100% 36%;
+    background-color: hsl(217, 28%, 15%);
+
+}
+
+.hero img{
+    width: 100%;
+}
+
+.hero h2{
+    padding: 27px 100px;
+}
+
+.hero p{
+    color: rgb(201, 192, 192);
+    padding: 13px 255px;
+}
+
+.hero a{
+    color: white;
+    text-decoration: none;
+    background: hsl(198, 60%, 50%);
+    padding: 12px 54px;
+    border-radius: 69px;
+    display: inline-block;
+    margin: 23px 0px;
+    transition: all 0.25s;
+}
+
+.hero a:hover{
+    color: hsl(198, 60%, 50%);
+    background-color: white;
+}
+
+
+
+
+
+
+
+/* Second Section  */
+.sec2{
+    /* border: 1px solid white; */
+    background: hsl(218, 28%, 13%);
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    color: white;
+    padding: 0px 140px;
+}
+
+.sec2 .icon-item{
+    flex-basis: 50%;
+    text-align: center;
+    padding: 0px 122px;
+}
+
+.sec2 h3{
+    font-size: 1.3rem;
+    padding-top: 18px;
+    padding-bottom: 11px;
+}
+
+.sec2 img{
+    width: 90px;
+    height: 80px;
+}
+
+
+
+
+
+
+/* Third Section - Stay Productive */
+.sec3{
+    /* border: 1px solid white; */
+    background: hsl(218, 28%, 13%);
+    height: 550px;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.sec3-img{
+    /* border: 1px solid white; */
+    width: 100%;
+    flex-basis: 50%;
+}
+
+.sec3-img img{
+    /* border: 1px solid white; */
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 142px;
+}
+
+.sec3-text{
+    /* border: 1px solid white; */
+    flex-basis: 50%;
+    padding-top: 148px;
+    padding-left: 97px;
+    padding-right: 160px;
+}
+
+.sec3 h2{
+    padding-right: 29px;
+    padding-bottom: 22px;
+}
+
+.sec3 p{
+    padding-bottom: 13px;
+}
+
+.sec3 a{
+    color: hsl(176, 68%, 64%);
+    text-decoration: none;
+    border-bottom: 2px solid hsl(176, 68%, 64%);
+    padding-bottom: 3px;
+}
+
+.sec3 a img{
+    position: relative;
+    top: 4px;
+    left: 1px;
+}
+
+
+
+
+
+
+
+/* Reviews / Testimonials */
+.reviews{
+    /* border: 1px solid white; */
+    background: hsl(218, 28%, 13%);
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 65px;
+    padding: 100px;
+}
+
+.rev{
+    background-color: hsl(222, 29%, 18%);
+    padding-top: 33px;
+    padding-bottom: 10px;
+    padding-left: 37px;
+    padding-right: 49px;
+    border-radius: 5px;
+}
+
+.rev > p{
+    padding-bottom: 25px;
+}
+
+.profile{
+    display: flex;
+}
+
+.profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+}
+
+.profile div{
+    padding-left: 8px;
+}
+
+.profile h4{
+    font-size: 11px;
+}
+
+.profile p{
+    font-size: 8px;
+}
+
+
+
+
+
+
+
+/* Last Card Sign Up  */
+.sign-up{
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 2960px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(222, 26%, 15%);
+    padding: 32px 4% 34px;
+    border-radius: 7px;
+    text-align: center;
+    
+}
+
+.sign-up h3{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.sign-up p{
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.sign-up input{
+    padding: 10px 120px;
+    border-radius: 30px;
+}
+
+.sign-up a{
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: hsl(198, 60%, 50%);
+    color: white;
+    border-radius: 20px;
+    margin-left: 2%;
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+/* Footer  */
+footer{
+    background-color: hsl(218, 50%, 9%);
+    padding-top: 171px;
+    height: 473px;
+    color: rgb(201, 192, 192);
+    margin-top: 200px;
+}
+
+footer > img{
+    padding-left: 7%;
+    padding-bottom: 2.8%;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot a{
+    color: rgb(201, 192, 192);
+    display: block;
+    text-decoration: none;
+    padding-bottom: 10%;
+}
+
+.foot a:hover{
+    color: white;
+}
+
+.location{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-basis: 25.4%;
+}
+
+.location img{
+    width: 14px;
+    height: 20px;
+}
+
+.location p{
+    padding-left: 3%;
+    padding-right: 8%;
+}
+
+.contact{
+    /* border: 1px solid white; */
+    flex-basis: 12%;
+}
+
+
+.contact span{
+    padding-left: 10%;
+}
+
+.about{
+    /* border: 1px solid white; */
+    flex-basis: 5%;
+}
+
+.contact-us{
+    /* border: 1px solid white; */
+    flex-basis: 6%;
+}
+
+.social-media{
+    /* border: 1px solid white; */
+    flex-basis: 8.6%;
+}
+
+.social-media i{
+    /* border: 1px solid white; */
+    padding-right: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1350px){
+
+.hero p{
+    padding: 13px 200px;
+}
+
+
+
+
+
+}
+
+@media (max-width: 1230px){
+    .hero{
+        padding: 100px 50px;
+    }
+
+    .sec2 .icon-item{
+        padding: 0px 60px;
+    }
+
+    .sec2{
+        padding: 0px 100px;
+    }
+
+    .sec3-text{
+        padding-top: 45px;
+        padding-right: 30px;
+    }
+
+    .sec3-p{
+        padding-bottom: 22px;
+    }
+
+}
+
+
+@media (max-width: 950px){
+    .sec2 .icon-item{
+        padding: 0px 30px;
+    }
+
+    .sec2{
+        padding: 0px 37px;
+    }
+
+    .hero{
+        height: 1200px;
+    }
+
+    .sec3-img img{
+        margin-left: 50px;
+    }
+
+    .sec3-text{
+        padding-left: 0px;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 840px){
+
+.hero{
+    padding: 50px 0px;
+}
+
+.hero h2{
+    padding: 27px 0px;
+}
+
+.hero p{
+    padding: 13px 100px;
+}
+
+}
