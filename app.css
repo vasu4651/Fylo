@@ -361,7 +361,7 @@ footer > img{
 
 .contact{
     /* border: 1px solid white; */
-    width: 20%;
+    width: 23%;
 }
 
 
@@ -480,8 +480,19 @@ footer > img{
         padding-left: 0px;
     }
 
+    .reviews{
+        height: 300px;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .rev{
+        padding: 10px 5px 0px;
+        height: 210px;
+    }
+
     .sign-up{
-        top: 2810px;
+        top: 2700px;
     }
 
     .foot{
@@ -497,6 +508,7 @@ footer > img{
         padding-left: 2%;
         padding-right: 0%;
     }
+
 
 }
 
@@ -518,24 +530,13 @@ footer > img{
         padding: 13px 100px;
     }
 
-    .reviews{
-        height: 300px;
-        gap: 20px;
-        padding: 15px;
-    }
-
-    .rev{
-        padding: 10px 5px 0px;
-        height: 210px;
-    }
 
     .sign-up{
         top: 2550px;
     }
+    
 
-    .foot{
-        flex-direction: column;
-    }
+
 
 }
 
