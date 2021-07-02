@@ -346,7 +346,7 @@ footer > img{
 .location{
     /* border: 1px solid white; */
     display: flex;
-    flex-basis: 25.4%;
+    width: 28.4%;
 }
 
 .location img{
@@ -361,7 +361,7 @@ footer > img{
 
 .contact{
     /* border: 1px solid white; */
-    flex-basis: 12%;
+    width: 20%;
 }
 
 
@@ -371,17 +371,17 @@ footer > img{
 
 .about{
     /* border: 1px solid white; */
-    flex-basis: 5%;
+    width: 8%;
 }
 
 .contact-us{
     /* border: 1px solid white; */
-    flex-basis: 6%;
+    width: 9.5%;
 }
 
 .social-media{
     /* border: 1px solid white; */
-    flex-basis: 8.6%;
+    width: 11%;
 }
 
 .social-media i{
@@ -484,6 +484,20 @@ footer > img{
         top: 2810px;
     }
 
+    .foot{
+        justify-content: space-between;
+        padding-left: 4%;
+    }
+
+    .location{
+        width: 21.4%;
+    }
+
+    .location p {
+        padding-left: 2%;
+        padding-right: 0%;
+    }
+
 }
 
 
@@ -517,6 +531,10 @@ footer > img{
 
     .sign-up{
         top: 2550px;
+    }
+
+    .foot{
+        flex-direction: column;
     }
 
 }
